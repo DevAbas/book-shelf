@@ -1,3 +1,5 @@
 export {
-  getBooks
+  getBooks,
+  getBookWithReviewer,
+  clearBookReviewer
 } from './booksActions';
