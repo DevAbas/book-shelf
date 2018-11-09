@@ -4,6 +4,8 @@ export default function(state={},action) {
   switch(action.type) {
     case actionTypes.LOGIN_USER: 
       return { ...state, login: action.payload }
+    case actionTypes.USER_AUTH: 
+      return { ...state, login: action.payload }
     default: 
       return state
   }

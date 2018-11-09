@@ -4,4 +4,5 @@ export const GET_BOOK_W_REVIEWER = 'GET_BOOK_W_REVIEWER';
 export const CLEAR_BOOK_W_REVIEWER = 'CLEAR_BOOK_W_REVIEWER';
 
 // USER ACTION TYPES
-export const LOGIN_USER = 'LOGIN_USER'
+export const LOGIN_USER = 'LOGIN_USER';
+export const USER_AUTH = 'USER_AUTH';

@@ -5,5 +5,6 @@ export {
 } from './booksActions';
 
 export {
-  loginUser
+  loginUser,
+  getAuth
 } from './userActions'

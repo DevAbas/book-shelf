@@ -10,3 +10,13 @@ export const loginUser = ({ email, password }) => {
       payload: request
     }
 }
+
+export const getAuth = () => {
+  const request = axios.get('/api/auth')
+    .then(response => response.data)
+
+  return {
+    type: actionTypes.USER_AUTH,
+    payload: request    
+  }
+}
