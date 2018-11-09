@@ -16,6 +16,10 @@ export default function(state={},action) {
         selectedBook: action.payload.selectedBook,
         reviewer: action.payload.reviewer
       }
+    case actionTypes.ADD_BOOK:
+      return { ...state, newBook: action.payload }
+    case actionTypes.CLEAR_NEW_BOOK:
+      return { ...state, newBook: action.payload }
     default: 
       return state
   }

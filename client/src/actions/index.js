@@ -1,7 +1,9 @@
 export {
+  addBook,
   getBooks,
   getBookWithReviewer,
-  clearBookReviewer
+  clearBookReviewer,
+  clearNewBook
 } from './booksActions';
 
 export {

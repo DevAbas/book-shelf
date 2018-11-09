@@ -1,7 +1,9 @@
 // BOOKS ACTION TYPES
 export const GET_BOOKS = 'GET_BOOKS';
+export const ADD_BOOK = 'ADD_BOOK';
 export const GET_BOOK_W_REVIEWER = 'GET_BOOK_W_REVIEWER';
 export const CLEAR_BOOK_W_REVIEWER = 'CLEAR_BOOK_W_REVIEWER';
+export const CLEAR_NEW_BOOK = 'CLEAR_NEW_BOOK';
 
 // USER ACTION TYPES
 export const LOGIN_USER = 'LOGIN_USER';

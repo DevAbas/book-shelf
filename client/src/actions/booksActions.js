@@ -53,3 +53,20 @@ export const clearBookReviewer = () => {
     }
   }
 }
+
+export const addBook = newBook => {
+  const request = axios.post('/api/book', newBook)
+    .then(response => response.data);
+
+    return {
+      type: actionTypes.ADD_BOOK,
+      payload: request
+    }
+}
+
+export const clearNewBook = () => {
+  return {
+    type: actionTypes.CLEAR_NEW_BOOK,
+    payload: {}
+  }
+}
