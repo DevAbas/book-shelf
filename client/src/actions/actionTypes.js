@@ -8,3 +8,4 @@ export const CLEAR_NEW_BOOK = 'CLEAR_NEW_BOOK';
 // USER ACTION TYPES
 export const LOGIN_USER = 'LOGIN_USER';
 export const USER_AUTH = 'USER_AUTH';
+export const GET_USER_POSTS = 'GET_USER_POSTS';

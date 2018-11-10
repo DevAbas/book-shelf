@@ -8,5 +8,6 @@ export {
 
 export {
   loginUser,
-  getAuth
+  getAuth,
+  getUserPosts
 } from './userActions'

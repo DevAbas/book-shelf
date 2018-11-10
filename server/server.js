@@ -75,6 +75,13 @@ app.get('/api/users', (req, res) => {
   })
 })
 
+app.get('/api/user_posts', (req, res) => {
+  Book.find({ownerId: req.query.id}).exec((err, docs) => {
+    if(err) return res.status(400).send(err);
+    res.send(docs)
+  })
+})
+
 // POST //
 app.post('/api/book', (req, res) => {
   const book = new Book(req.body);

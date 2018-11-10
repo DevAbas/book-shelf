@@ -39,6 +39,17 @@ class AddBook extends Component {
       ...this.state.formData,
       ownerId: this.props.user.id
     }))
+
+    this.setState({
+      formData: {
+        name: '',
+        author: '',
+        review: '',
+        pages: '',
+        rating: '',
+        price: ''
+      }
+    })
   }
 
   showNewBook = book => (

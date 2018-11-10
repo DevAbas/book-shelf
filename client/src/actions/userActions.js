@@ -20,3 +20,13 @@ export const getAuth = () => {
     payload: request    
   }
 }
+
+export const getUserPosts = (userId) => {
+  const request = axios.get(`/api/user_posts?id=${userId}`)
+    .then(response => response.data)
+
+  return {
+    type: actionTypes.GET_USER_POSTS,
+    payload: request
+  }
+}
