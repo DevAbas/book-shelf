@@ -7,7 +7,11 @@ const { auth } = require('./middleware/auth');
 const app = express();
 
 mongoose.Promise = global.Promise;
-mongoose.connect(config.DATABASE, { useNewUrlParser: true, useCreateIndex: true, });
+mongoose.connect(config.DATABASE, { 
+  useNewUrlParser: true, 
+  useCreateIndex: true, 
+  useFindAndModify: false 
+});
 
 // Load models
 const { User } = require('./models/user');

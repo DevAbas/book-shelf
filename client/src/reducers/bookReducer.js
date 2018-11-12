@@ -20,6 +20,14 @@ export default function(state={},action) {
       return { ...state, newBook: action.payload }
     case actionTypes.CLEAR_NEW_BOOK:
       return { ...state, newBook: action.payload }
+    case actionTypes.GET_BOOK:
+      return { ...state, selectedBook: action.payload }
+    case actionTypes.UPDATE_BOOK:
+      return { 
+        ...state, 
+        selectedBook: action.payload.doc,
+        updateBook: action.payload.success 
+      }
     default: 
       return state
   }

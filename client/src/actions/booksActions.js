@@ -70,3 +70,23 @@ export const clearNewBook = () => {
     payload: {}
   }
 }
+
+export const getBook = id => {
+  const request = axios.get(`/api/book?id=${id}`)
+    .then(response => response.data);
+
+    return {
+      type: actionTypes.GET_BOOK,
+      payload: request
+    }
+}
+
+export const updateBook = data => {
+  const request = axios.post(`/api/updateBook`,data)
+    .then(response => response.data);
+
+    return {
+      type: actionTypes.UPDATE_BOOK,
+      payload: request
+    }
+}

@@ -25,7 +25,6 @@ class UserPosts extends Component {
   )
 
   render() {
-    console.log(this.props.user)
     return (
       <div className="user_posts">
         <h4>Your reviews:</h4>

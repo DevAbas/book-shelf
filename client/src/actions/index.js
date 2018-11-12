@@ -1,6 +1,8 @@
 export {
   addBook,
   getBooks,
+  getBook,
+  updateBook,
   getBookWithReviewer,
   clearBookReviewer,
   clearNewBook
