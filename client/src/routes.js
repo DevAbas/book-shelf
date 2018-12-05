@@ -3,8 +3,8 @@ import { Switch, Route } from 'react-router-dom';
 import Auth from './hoc/Auth/auth';
 
 // COMPONENTS
-import Home from './components/Home/home';
 import Layout from './hoc/Layout/layout';
+import Home from './components/Home/home';
 import BookView from './components/Books/';
 import Login from './containers/Admin/Login';
 import User from './components/Admin/';
